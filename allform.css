@@ -1,0 +1,21 @@
+body{
+    
+    background-image: url("bgimg2.jpg");
+}
+h3{
+    margin-top: .1cm;
+    text-align: center;
+    color:black;
+   
+}
+
+.form{
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    background-color:linen;
+    border: 1px solid=black;
+    margin-top: .1cm;
+    
+}
+

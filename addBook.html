@@ -1,0 +1,54 @@
+<!doctype html>
+   <html lang="en">
+      <head>
+         <title>Add new Book</title>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" href="allform.css"> 
+        </head>
+          <body>
+              
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+          
+            <script src="addBook.js"></script>
+
+            <h3><i class="fa fa-align-center" aria-hidden="true">Enter book details to store</i></h3> 
+            <div class="form" >
+               <form action="addBook2.html">
+            <div class="form-group">
+               <div id='errortitle' style="color: red;"></div>
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" class="form-control" placeholder="enter book title" aria-describedby="helpId" required>
+            <div id='errorauthor' style="color: red;"></div> 
+            <label for="author">Author</label>
+             <input type="text" name="author" id="author" class="form-control" placeholder="enter author name" aria-describedby="helpId" required>
+             <div id='errorprice' style="color: red;"></div>
+             <label for="price">Price</label>
+             <input type="number" name="price" id="price" class="form-control" min="0" value="0" step="any" placeholder="enter price" aria-describedby="helpId" required>
+             <label for="genre">Genre</label>
+             <select class="form-control" id="genre" name="Genre" required>
+                 <option id="1" value="Comic">Comic</option>
+                 <option id="1" value="Mystery">Mystery</option>
+                 <option id="1" value="Romance">Romance</option>
+                 <option id="1" value="Horror">Horror</option>
+             </select>
+             <div id='errordate' style="color: red;"></div>
+             <label for="date">Date</label>
+             <input type="date" name="date" id="date" class="form-control" placeholder="enter date" aria-describedby="helpId" required>
+             <button onclick="validation()" type="submit" class="btn btn-primary">Submit</button>
+           </div>
+           </form>
+           <a href="home.html">Back to Home</a>
+           </div>
+
+           
+   </body>
+</html>
